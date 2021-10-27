@@ -1,1 +1,2 @@
 hey this line created from master branch after first commit-amend first line from master
+added second line as per #issue1 from #issue1 branch

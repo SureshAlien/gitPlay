@@ -1,1 +1,30 @@
 origin/master is the local ref .where origin is remote branch 
+*******
+if your pull request is auto merged by github we dont have to create one more test pull request
+
+if it is not auto merged ,github will show this message " Can’t automatically merge. Don’t worry, you can still create the pull request."
+
+Step 1: From your project repository, bring in the changes and test.
+
+git fetch origin
+git checkout -b dev origin/dev
+git merge master
+Step 2: Merge the changes and update on GitHub.
+
+git checkout master
+git merge --no-ff dev
+git push origin master
+**************************************
+To fetch origin
+git fetch origin
+******************************
+To create a branch with code what is exist in remote
+git checkout -b branch origin/branch
+*************
+MERGE
+
+To merge (f)
+from branch where you want to merge  >>> git merge branch (from where you wan to be merged)
+
+To revert back
+git merg --abort
